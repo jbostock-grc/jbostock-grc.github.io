@@ -1,282 +1,213 @@
 /*CSS document*/
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-html,
-body,
-div,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-}
-
-img.full-bleed {
-  width: 100vw;
-  max-width: none;
-  margin-left: calc(-50vw + 50%);
-}
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
 
 img {
-  width: 100%;
-  display: block;
+    width: 100%;
+    display: block;
 }
 
 header {
-  padding: 1rem 0rem 0.25rem;
+	padding: 1rem 0rem .25rem;
 }
 
-div.container,
-div.home-container {
-  width: 100%;
-  max-width: 40em;
-  margin: auto;
-  padding: 0;
+div.container, div.home-container {
+    max-width: 40em;
+    position: relative;
+    margin: auto;
 }
 
 h1 {
-  width: 7rem;
-  padding: 0rem 0.5rem 1rem;
+	width: 7rem;
+    padding: 0rem .5rem 1rem;
 }
 
 h2 {
-  color: rgb(84, 119, 157);
-  font-size: 3em;
-  font-family: serif;
-  font-weight: bold;
-  padding: 1.5rem 0.5rem 0.75rem;
+    color: rgb(84, 119, 157);
+    font-size: 3em;
+    font-family: serif;
+    font-weight: bold;
+    padding: 1.5rem .5rem .75rem;
 }
 
 ul li {
-  list-style-type: none;
+	list-style-type: none;
 }
 
-p,
-nav,
-footer {
-  font-family: sans-serif;
+p, nav, figcaption, footer {
+    font-family: sans-serif;
 }
 
 p {
-  color: rgb(5, 5, 5);
-  margin-bottom: 0.75rem;
-  line-height: 1.25em;
-  padding: 0rem 0.5rem 1rem;
+    color: rgb(5, 5, 5);
+    margin-bottom: .75rem;
+    line-height: 1.25em;
+    padding: 0rem .5rem 1rem;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 nav ul li a {
-  color: rgb(84, 119, 157);
-  font-weight: bold;
-  line-height: 1.5rem;
+	color:  rgb(84, 119, 157);
+    font-weight: bold;
+    line-height: 1.5rem;
 }
 
 nav {
-  padding: 0rem 0.5rem 0.5rem;
-}
-
-section.mainstory h2 {
-  padding: 0.25rem 0.5rem 0rem;
-}
-
-section.secondary h2 {
-  font-size: 1.7em;
-  padding: 0.25rem 0.5rem 0rem;
-}
-
-section.tertiary h2 {
-  font-size: 1.25em;
-  padding-top: 0.5rem;
-  border-top: 1px solid rgb(84, 119, 157);
-  margin: 0rem 0.5rem;
-  padding: 0.5rem 0rem 0rem;
+    padding: 0rem .5rem .5rem;
 }
 
 figcaption {
-  font-size: 0.9rem;
-  font-style: italic;
-  color: rgb(120, 120, 120);
-  text-align: left;
-  padding: 0.5rem 0.2rem 1rem;
-  font-family: sans-serif;
+    font-style: italic; 
+    color:  rgb(103, 103, 103);
+    padding: .5rem .5rem 1rem;
+}
+
+section.mainstory h2 {
+    padding: .25rem .5rem 0rem;
+}
+
+section.secondary h2 {
+    font-size: 1.75em;
+    padding: .25rem .5rem 0rem;
+}
+
+section.tertiary h2 {
+    font-size: 1.25em;
+    padding-top: .5rem;
+    border-top: 1px solid  rgb(84, 119, 157);
+    margin: 0rem .5rem;
+    padding: .5rem 0rem 0rem;
 }
 
 aside h2 {
-  font-size: 1.25em;
-  padding-bottom: 0rem;
-  padding-top: 0.5rem;
+    font-size: 1.25em;
+    padding-bottom: 0rem;
+    padding-top: .5rem;
 }
 
 aside {
-  background-color: rgb(204, 207, 251);
-  padding: 1rem 0.5rem 1rem;
-}
-
-body.homepage aside {
-  background-color: white;
+    background-color: rgb(203, 213, 255);
+    padding: 1rem .5rem 1rem;
 }
 
 footer {
-  background-color: rgb(84, 119, 157);
-  padding: 0.5rem;
-  color: rgb(245, 245, 245);
-  margin: 0rem;
-  box-sizing: border-box;
+    background-color: rgb(84, 119, 157);
+    padding:.5rem;
+    color:  rgb(245, 245, 245);
+    margin: 0rem;
+    box-sizing: border-box;
 }
 
 @media only screen and (min-width: 40em) {
-  nav ul li {
-    display: inline;
-    padding-right: 2rem;
-  }
+	nav ul li {
+		display: inline;
+        padding-right: 2rem;
+	}
 
-  h1,
-  h2,
-  section.mainstory h2,
-  section.secondary h2,
-  section.tertiary h2,
-  nav,
-  p,
-  footer {
-    padding-left: 0rem;
-    padding-right: 0rem;
-  }
+    h1, h2, section.mainstory h2, section.secondary h2, section.tertiary h2, nav, p, figcaption, footer {
+        padding-left: 0rem;
+        padding-right: 0rem;
+	}
 
-  section.tertiary h2 {
-    margin: 0rem;
-  }
+    section.tertiary h2 {
+        margin: 0rem;
+    }
 }
 
 @media only screen and (min-width: 60em) {
-  div.home-container,
-  div.container {
-    max-width: 60em;
-    margin: auto;
-    padding: 0 1rem;
-  }
+    
+    div.home-container {
+        max-width: 80em;
+        padding: 0 1em;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1rem;
+    }
 
-  main,
-  aside {
-    color: rgb(255, 255, 255);
-    display: block;
-  }
+    div.container {
+        max-width: 60em;
+        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1rem;
+    }
 
-  header,
-  footer {
-    width: 100%;
-  }
+    div.home-container main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
 
-  section.mainstory,
-  section.secondary,
-  section.tertiary {
-    display: block;
-    margin-bottom: 2rem;
-  }
+    div.home-container aside {
+        background: none;
+        padding: 0;
+        margin-top: 0;
+    }
 
-  section.mainstory a,
-  section.secondary a {
-    display: block;
-  }
+    div.container aside {
+        margin-top: 0;
+    }
 
-  section.mainstory a figure,
-  section.secondary a figure {
-    display: block;
-  }
+    header, footer {
+        grid-column: 1/3;
+    }
 
-  section.mainstory a figure img,
-  section.secondary a figure img {
-    object-fit: cover;
-  }
+    section.mainstory {
+        grid-column: 2/4;
+        grid-row: 1/3;
+        display: flex;
+    }
 
-  section.mainstory a h2,
-  section.secondary a h2,
-  section.secondary a p {
-    display: block;
-  }
+    section.mainstory a {
+        flex: 1 0 12em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.mainstory a figure {
+        flex: 1 0 12em;
+        display: flex;
+    }
+
+    section.mainstory a figure img {
+        object-fit: cover;
+    }
+
+    section.mainstory a h2 {
+        flex: 0 0 1em;
+    }
+
+    section.mainstory a p {
+        flex: 0 0 auto;
+    }
+    
+    section.secondary {
+        display: flex;
+    }
+
+    section.secondary a {
+        flex: 1 0 12em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.secondary a figure {
+        flex: 1 0 12em;
+        display: flex;
+    }
+
+    section.secondary a figure img {
+        object-fit: cover;
+    }
+
+    section.secondary a h2 {
+        flex: 0 0 1em;
+    }
+
+    section.secondary a p {
+        flex: 0 0 4em;
+    }
 }
