@@ -107,7 +107,7 @@ footer {
         padding-right: 2rem;
 	}
 
-    h1, h2, section.mainstory h2, section.secondary h2, section.tertiary h2, nav, p, figcaption, footer {
+    h1, h2, section.mainstory h2, section.secondary h2, section.tertiary h2, nav, p, figcaption {
         padding-left: 0rem;
         padding-right: 0rem;
 	}
