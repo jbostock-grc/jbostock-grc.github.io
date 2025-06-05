@@ -121,10 +121,10 @@ div.form {
 }
 
 footer {
-  background-color: #6ea1ba;
+  background-color: #5f3e78;
   padding: 1rem;
-  color: rgb(250, 249, 247);
-  margin: 0rem;
+  color: #ffffff;
+  margin: 0;
   box-sizing: border-box;
   position: relative;
   width: 100%;
@@ -137,7 +137,7 @@ h1 {
 }
 
 h2 {
-  color: #6ea1ba;
+  color: #cec1de;
   font-size: 2.25rem;
   font-family: "forma-djr-text", sans-serif;
   font-weight: 500;
@@ -319,7 +319,7 @@ section ul li select {
   font-family: "forma-djr-text", sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #6ea1ba;
+  color: #c6a7ea;
 }
 
 .personal-info,
@@ -371,11 +371,19 @@ main form {
 }
 
 button {
-  background-color: #6ea1ba;
+  background-color: #c6a7ea;
+  color: #000000;
   border-style: none;
-  padding: 0.5rem;
+  padding: 0.5rem 1.25rem;
   margin-top: 1rem;
-  color: rgb(250, 249, 247);
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+  }
 }
 
 @media only screen and (min-width: 40em) {
@@ -572,11 +580,11 @@ button {
   }
 
   h2 {
-    color: #6ea1ba;
+    color: #cec1de;
   }
 
   aside h2 {
-    color: #6ea1ba;
+    color: #cec1de;
   }
 
   div.container,
@@ -598,4 +606,104 @@ button {
 }
 .gallery + nav.gallery {
   margin-top: 2rem;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  html,
+  body {
+    background-color: #121212;
+    color: #ffffff;
+  }
+
+  div.container,
+  div.home-container,
+  div.form,
+  section.personal-info,
+  section.preferences,
+  aside,
+  main.gallery {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+
+  footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+  }
+
+  p,
+  figcaption,
+  .personal-info ul li label,
+  .preferences ul li label,
+  nav ul li a,
+  h2,
+  .gallery-title,
+  section.tertiary h2 {
+    color: #ffffff;
+  }
+
+  .personal-info ul li input,
+  .preferences ul li input {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #444;
+  }
+
+  nav.gallery label img {
+    filter: brightness(0.8);
+  }
+
+  h1 {
+    background-image: url("logo-dark.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  h1 img {
+    opacity: 0;
+  }
+}
+
+h2,
+section.mainstory h2,
+section.secondary h2,
+section.tertiary h2,
+aside h2,
+.gallery-title,
+nav ul li a {
+  color: #c6a7ea !important;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  h2,
+  section.mainstory h2,
+  section.secondary h2,
+  section.tertiary h2,
+  aside h2,
+  .gallery-title,
+  nav ul li a {
+    color: #c6a7ea !important;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  footer {
+    background-color: #5f3e78;
+    color: #ffffff;
+  }
+}
+
+nav ul li a {
+  color: #eeeeee !important;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  nav ul li a {
+    color: #eeeeee !important;
+  }
+}
+
+section.personal-info ul li label,
+section.preferences ul li label {
+  color: #ffffff !important;
 }
