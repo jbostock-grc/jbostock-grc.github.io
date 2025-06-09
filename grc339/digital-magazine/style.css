@@ -200,7 +200,7 @@ nav.gallery {
 main.gallery {
   position: relative;
   width: 100%;
-  max-width: 650px;
+  max-width: 40rem;
   aspect-ratio: 4 / 5;
   margin: 0 auto 2rem;
   overflow: hidden;
@@ -209,7 +209,7 @@ main.gallery {
 
 .gallery-wrapper {
   grid-column: 1 / -1;
-  max-width: 650px;
+  max-width: 40rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -236,8 +236,10 @@ figure.gallery figcaption {
   font-style: italic;
   color: rgb(103, 103, 103);
   padding: 1rem 0.5rem 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   background: transparent;
-  text-align: center;
+  text-align: left;
   max-width: 90%;
   z-index: 2;
 }
@@ -271,7 +273,7 @@ figcaption {
   color: rgb(103, 103, 103);
   padding: 1rem 0.5rem 0;
   background: transparent;
-  text-align: center;
+  text-align: left;
   max-width: 90%;
   z-index: 2;
 }
@@ -379,11 +381,6 @@ button {
   font-weight: 500;
   font-size: 1rem;
   cursor: pointer;
-}
-
-@media screen and (prefers-color-scheme: dark) {
-  body {
-  }
 }
 
 @media only screen and (min-width: 40em) {
@@ -694,7 +691,7 @@ nav ul li a {
 }
 
 nav ul li a {
-  color: #eeeeee !important;
+  color: #545454 !important;
 }
 
 @media screen and (prefers-color-scheme: dark) {
